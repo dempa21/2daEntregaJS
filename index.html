@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <title>Calculadora Seguro de Auto</title>
+  
+    <style>
+        body {
+            background-color: yellow;
+            font-family: 'Trebuchet MS';
+        }
+          
+        h1 {
+            font-size: 35px;
+        }
+          
+        h1 {
+            font-size: 21px;
+            margin-top: 20px;
+        }
+          
+        .boton {
+            background-color: #FFF;
+        }
+        .calculator {
+            width: 400px;
+            height: 450px;
+            background-color: black;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            padding: 20px 0px 0px 100px;
+            border-radius: 50px;
+            color: white;
+        }
+          
+        input {
+            padding: 7px;
+            width: 70%;
+            margin-top: 7px;
+        }
+    </style>
+</head>
+  
+<body>
+    <div class="calculator">
+        <h1>Calculadora seguro auto</h1>
+  
+        <!-- Calling Calculate function defined in app.js -->
+        <p>Modelo     :
+            <input id="modelo" type="number" 
+            onchange="Calculate()">
+        </p>
+  
+        <p>Kms recorridos  :
+            <input id="cantidadKms" type="number" 
+            onchange="Calculate()">
+        </p>
+        
+        <button type="button" id="boton">CALCULAR</button>
+        <h2 id="total"></h2>
+    </div>
+  
+    <script src="js/script.js"></script>
+</body>
+  
+</html>
